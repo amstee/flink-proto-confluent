@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package amstee.flink.formats.proto.test.v1;
+
+enum MessageType {
+  TEXT = 0;
+  IMAGE = 1;
+  VIDEO = 2;
+}
+
+enum MessageStatus {
+  SENT = 0;
+  RECEIVED = 1;
+  READ = 2;
+}
+
+message TestEnum {
+  MessageType type = 1;
+  repeated MessageStatus status = 2;
+  map<string, MessageStatus> statusMap = 3;
+}

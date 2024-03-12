@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package amstee.flink.formats.proto.test.v1;
+
+message SimpleMessage {
+  string content = 1;
+  string date_time = 2;
+}

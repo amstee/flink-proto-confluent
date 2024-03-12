@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package amstee.flink.formats.proto.test.v1;
+
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/wrappers.proto";
+
+message NestedRepeated {
+  string value = 1;
+}
+
+message RepeatedTest {
+  repeated string values = 1;
+  repeated int32 numbers = 2;
+  repeated float floats = 3;
+  repeated double doubles = 4;
+  repeated bool bools = 5;
+  repeated bytes bytes = 6;
+  repeated google.protobuf.StringValue string_values = 7;
+  repeated google.protobuf.Timestamp timestamps = 8;
+  repeated NestedRepeated nested_repeated = 9;
+}

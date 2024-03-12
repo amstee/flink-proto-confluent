@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package amstee.flink.formats.proto.test.v1;
+
+import "google/protobuf/wrappers.proto";
+
+message WrapperTypesTest {
+    google.protobuf.Int32Value int32Value = 1;
+    google.protobuf.Int64Value int64Value = 2;
+    google.protobuf.UInt32Value uint32Value = 3;
+    google.protobuf.UInt64Value uint64Value = 4;
+    google.protobuf.FloatValue floatValue = 5;
+    google.protobuf.DoubleValue doubleValue = 6;
+    google.protobuf.BoolValue boolValue = 7;
+    google.protobuf.StringValue stringValue = 8;
+    google.protobuf.BytesValue bytesValue = 9;
+}

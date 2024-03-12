@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+package amstee.flink.formats.proto.test.v1;
+
+message BigPbMessage {
+  int32 int_field_1 = 1;
+  bool bool_field_2 = 2;
+  string string_field_3 = 3;
+  bytes bytes_field_4 = 4;
+  double double_field_5 = 5;
+  float float_field_6 = 6;
+  uint32 uint32_field_7 = 7;
+  int64 int64_field_8 = 8;
+  uint64 uint64_field_9 = 9;
+  bytes bytes_field_10 = 10;
+  double double_field_11 = 11;
+  bytes bytes_field_12 = 12;
+  bool bool_field_13 = 13;
+  string string_field_14 = 14;
+  float float_field_15 = 15;
+  int32 int32_field_16 = 16;
+  bytes bytes_field_17 = 17;
+  bool bool_field_18 = 18;
+  string string_field_19 = 19;
+  float float_field_20 = 20;
+  fixed32 fixed32_field_21 = 21;
+  fixed64 fixed64_field_22 = 22;
+  sfixed32 sfixed32_field_23 = 23;
+  sfixed64 sfixed64_field_24 = 24;
+  double double_field_25 = 25;
+  uint32 uint32_field_26 = 26;
+  uint64 uint64_field_27 = 27;
+  bool bool_field_28 = 28;
+}

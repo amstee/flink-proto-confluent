@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package amstee.flink.formats.proto.test.v1;
+
+message RepeatedMessageTest {
+  InnerMessageTest d = 4;
+
+  message InnerMessageTest{
+    optional int32 a = 1;
+    optional int64 b = 2;
+  }
+}

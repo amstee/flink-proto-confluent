@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package amstee.flink.formats.proto.test.v1;
+
+
+message NestedMap {
+  string id = 1;
+}
+
+message MapTest {
+  map<string, string> simple_string_map = 1;
+  map<string, NestedMap> nested_map = 2;
+}
